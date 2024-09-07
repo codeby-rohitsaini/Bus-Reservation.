@@ -27,7 +27,7 @@ const OTPVerification = () => {
 
         if (enteredOtp.length === 6) {
             console.log("Entered OTP is:", enteredOtp);
-            const response = await fetch('http://localhost:8080/register/verify-otp', {
+            const response = await fetch('https://bus-reservation-backend-4cvo.onrender.com/register/verify-otp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
